@@ -1,5 +1,5 @@
 body{
-	background-color: blue;
+	background-color: lightgreen;
 }
 
 #customers {
@@ -22,5 +22,5 @@ body{
   padding-bottom: 12px;
   text-align: left;
   background-color: #4CAF50;
-  color: red;
+  color: white;
 }
