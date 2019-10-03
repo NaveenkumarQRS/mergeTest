@@ -1,3 +1,10 @@
+body{
+
+	background-color: red;
+
+}
+
+
 #customers {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
