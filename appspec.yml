@@ -1,18 +1,18 @@
 version: 0.0
 os: linux
 files: 
-	-	source: index.html
-		destination: /var/www/html
+-source: index.html
+destination: /var/www/html
 hooks:
-	BeforeInstall:
-		- 	location: scripts/install_dependenices.sh
-			timeout: 10
-			runas: root
-	ApplicationStart
-		- 	location: scripts/start_server.sh
-			timeout: 10
-			runas: root
-	ApplicationCheck:
-		-	location: scripts/status.sh
-			timeout: 10
-			runas: root
+BeforeInstall:
+-location: scripts/install_dependenices.sh
+timeout: 10
+runas: root
+ApplicationStart
+-location: scripts/start_server.sh
+timeout: 10
+runas: root
+ApplicationCheck:
+-location: scripts/status.sh
+timeout: 10
+runas: root
