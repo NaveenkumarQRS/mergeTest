@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files: 
+	- 	source: /index.html
+		destination: /var/www/html/
+hooks:
+	BeforeInstall:
+		- 	location: install_dependenices
+			runas: root
+		- 	location: start_server
+			runas: root
+	Applicationstop:
+		-	location: start_app
+			runas: root
