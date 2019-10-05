@@ -10,5 +10,5 @@ hooks:
 		- 	location: start_server
 			runas: root
 	Applicationstop:
-		-	location: start_app
+		-	location: stop_app
 			runas: root
